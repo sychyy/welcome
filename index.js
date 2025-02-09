@@ -4,7 +4,7 @@ const app = express();
 
 // Menangani permintaan ke /welcome
 app.get('/welcome', async (req, res) => {
-    const background = req.query.background || 'https://files.catbox.moe/lh40j5.png';
+    const background = req.query.background || 'https://files.catbox.moe/nf57ug.png';
     const text1 = req.query.text1 || 'Sycze';
     const text2 = req.query.text2 || 'Welcome To Sycze-Team';
     const text3 = req.query.text3 || 'Member 1986';

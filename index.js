@@ -4,11 +4,11 @@ const app = express();
 
 // Menangani permintaan ke /welcome
 app.get('/welcome', async (req, res) => {
-    const background = req.query.background || 'https://files.catbox.moe/nf57ug.png';
+    const background = req.query.background || 'https://i.ibb.co.com/Q3WrVcWx/20250210-180647.png';
     const text1 = req.query.text1 || 'Sycze';
     const text2 = req.query.text2 || 'Welcome To Sycze-Team';
     const text3 = req.query.text3 || 'Member 1986';
-    const avatar = req.query.avatar || 'https://files.catbox.moe/316j0f.jpg';
+    const avatar = req.query.avatar || 'https://i.ibb.co.com/JWhDgQLc/a6d806216b8c81360ff7590c2bbdd989.jpg';
 
     // Membentuk URL Popcat dengan parameter yang diterima
     const popcatUrl = `https://api.popcat.xyz/welcomecard?background=${encodeURIComponent(background)}&text1=${encodeURIComponent(text1)}&text2=${encodeURIComponent(text2)}&text3=${encodeURIComponent(text3)}&avatar=${encodeURIComponent(avatar)}`;
